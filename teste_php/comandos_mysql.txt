@@ -1,0 +1,12 @@
+sudo /opt/lampp/lampp start
+
+
+create database creature;
+default character set utf8;
+default collate utf8_general_ci;
+
+use creaure;
+
+create table animal(id_name int null auto_increment,nome varchar(50) not null, genero varchar(50) not null, sobre varchar(50000) not null, primary key(id_name))default charset=utf8;
+
+create table inform(id_info int not null auto_increment, reproducao varchar(30), filo varchar(50), familia varchar(20), subfamilia varchar(20),primary key(id_info), constraint fk_id_info foreign key(id_info) references animal(id_name))default charset=utf8;
