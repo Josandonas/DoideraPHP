@@ -2,7 +2,7 @@
 
 /* incluo o arquivo sql com as funções de conectar e a execução */
 
-	include_once "sql.php";
+	include_once "./Model/sql.php";
 
 	/*   Pârametros que referenciam os dados do banco de dados */
 	$nome= $_GET['nome'];

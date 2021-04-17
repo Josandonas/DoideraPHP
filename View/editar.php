@@ -1,6 +1,6 @@
 <?php 
 	/* incluo o arquivo sql com as funções de conectar e a execução */
-	include_once "sql.php";
+	include_once "./Model/sql.php";
 	/* O $id coleta o código que é passado via endereço do arquivo consulta.php */
 	$id=$_GET["codigo"];
 
@@ -28,7 +28,7 @@ $linha=mysqli_fetch_object($resultado);
 	<script>document.createElement("Pedição de Dados")</script>
 	<title>Modificação das informações</title>
 	<!-- no link eu chamo o arquivo css para realizar a beleza na apresentação da página-->
-	<link href="model_edit.css" rel="stylesheet">
+	<link href="../View/CSS/model_edit.css" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -44,7 +44,7 @@ $linha=mysqli_fetch_object($resultado);
 				<h1 style="text-align: center;">Edição de informação dos Animais do Muzoopan</h1>
 				<hr><br><br>
 					<!-- nesta parte do forme eu indico onde as informações que forma editadas vão parar apos o ok-->
-				<form method="$POST" action="edit_mysql.php">
+				<form method="$POST" action="../Controller/edit_mysql.php">
 					
 					<!--Nesta parte codigo defino o botão aplicando o comando do echo do php para mostrar os dados que estão salvos dentro do banco de dados porque dai em diante quando eu confirmar os dados são atulaizados enviando os dados ao arquivo de edit_mysql.php e assim realizo minhas modificações -->
 

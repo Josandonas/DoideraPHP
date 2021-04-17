@@ -1,6 +1,6 @@
 <?php
 /* incluo o arquivo sql com as funções de conectar e a execução */
-	include_once "sql.php";
+	include_once "./Model/sql.php";
 
 /* $con recebe a função de conectar no banco de dados */
 	$con=conectar();
