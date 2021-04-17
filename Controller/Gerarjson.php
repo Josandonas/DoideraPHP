@@ -1,10 +1,10 @@
 <?php
-	include_once "sql.php";
+	include_once "../Model/conexao.php";
 	$con=conectar();
 
 	$return_arr=array();
 /*Banco de Dados Supondo que já existe a base de dados e as tabelas criadas no exemplo irei utilizar um banco que contem a tabela tb_usuarios e que possui os campos id_usuario,nome e email. SQL que será executado Instrução SQL */
-	$sql = "SELECT id_nome, nome, genero, sobre FROM animal";
+	$sql = "SELECT id_name, nome, genero, sobre FROM animal";
 
 	$SQL = mysqli_query($sql,$con)or die(mysqli_error($con));
 /*A variável $table agora contém e referência um objeto MySQL. Iniciando a iteração ao objeto para resgatar os registros temos: */

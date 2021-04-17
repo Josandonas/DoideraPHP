@@ -26,5 +26,5 @@
 	mysqli_close($con);
 
 /* o header e responsavel por direcionar autoamticamente quem esta usando a página que no caso e da consulta dos dados*/
-	header("Location:../View/consulta.php");
+	header("Location:../View/PaginaDados.php");
 ?>

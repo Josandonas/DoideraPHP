@@ -42,8 +42,8 @@
 			<td><?php echo $mostrar["sobre"]; ?></td>
 			
 			<!-- cria dois botões responsaveis por retornar o id correspondente a um determinado animal no caso que são bem uteis para as funções de exclusão e edição-->
-			<td> <button><a href="./editar.php ?codigo=<?php echo $mostrar["id_name"]; ?>"> Editar </a></button> | 
-			<button><a href="../Controller/excluir.php ?codigo=<?php echo $mostrar["id_name"]; ?>"> Excluir </a></button> 
+			<td> <button><a href="./PaginaEdicao.php ?codigo=<?php echo $mostrar["id_name"]; ?>"> Editar </a></button> | 
+			<button><a href="../Controller/Excluir.php ?codigo=<?php echo $mostrar["id_name"]; ?>"> Excluir </a></button> 
 			</td>
 		
 		</tr>

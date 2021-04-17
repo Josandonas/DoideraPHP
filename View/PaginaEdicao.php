@@ -35,16 +35,16 @@ $linha=mysqli_fetch_object($resultado);
 		<div class="container">
 			<nav>
 				<ul class="menu"><!-- nesta parte do html eu nomeio dois botões para realizar um a consulta e o outro para que a pessoa volte a página principal de cadastro-->
-					<a href="consulta.php"> <li>Consulta </li> </a>
+					<a href="PaginaDados.php"> <li>Consulta </li> </a>
 					<a href="index.php"><li>Voltar a página de Cadastro</li></a>
 					<!-- termina aqui a criação dos botões-->
 				</ul>
 			</nav>
 			<section>
-				<h1 style="text-align: center;">Edição de informação dos Animais do Muzoopan</h1>
+				<h1 style="text-align: center;">Edição de informação dos Animais</h1>
 				<hr><br><br>
 					<!-- nesta parte do forme eu indico onde as informações que forma editadas vão parar apos o ok-->
-				<form method="$POST" action="../Controller/edit_mysql.php">
+				<form method="$POST" action="../Controller/Editar.php">
 					
 					<!--Nesta parte codigo defino o botão aplicando o comando do echo do php para mostrar os dados que estão salvos dentro do banco de dados porque dai em diante quando eu confirmar os dados são atulaizados enviando os dados ao arquivo de edit_mysql.php e assim realizo minhas modificações -->
 

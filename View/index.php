@@ -12,14 +12,15 @@
 		<div class="container">
 			<nav>
 				<ul class="menu">
-					<a href="../View/consulta.php"> <li>Consulta </li> </a>
+					<a href="../View/PaginaDados.php"> <li>Consulta </li> </a>
+					<!-- <a href="../Controller/Gerarjson.php"> <li>Gerar Arquivo Json </li> </a> -->
 				</ul>
 			</nav>
 			<section>
-				<h1 style="text-align: center;">Cadastro dos Animais do Muzoopan</h1>
+				<h1 style="text-align: center;">Cadastro dos Animais</h1>
 				<hr><br><br>
 
-				<form method="$POST" action="../Controller/registro.php">
+				<form method="$POST" action="../Controller/Salvar.php">
 					
 					<div>
 					Nome do Animal:<br> <input type="text" name="nome" class="campo" maxlength="40" required autofocus>
