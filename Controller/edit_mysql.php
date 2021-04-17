@@ -1,6 +1,6 @@
 <?php 
 /* incluo o arquivo sql com as funções de conectar e a execução */
-	include_once "./Model/sql.php";
+	include_once "../Model/sql.php";
 
 /* este get e especial ele pega o codigo dcorrespondente ao animal e o armazena dentro da variavel id lembra aquele codigo que sai da pagina de editar então e esse mesmo que e coletado neste lugar */
 	$id=$_GET['code'];
@@ -26,5 +26,5 @@
 	mysqli_close($con);
 
 /* o header e responsavel por direcionar autoamticamente quem esta usando a página que no caso e da consulta dos dados*/
-	header("Location:consulta.php");
+	header("Location:../View/consulta.php");
 ?>

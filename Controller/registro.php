@@ -2,7 +2,7 @@
 
 /* incluo o arquivo sql com as funções de conectar e a execução */
 
-	include_once "./Model/sql.php";
+	include_once "../Model/sql.php";
 
 	/*   Pârametros que referenciam os dados do banco de dados */
 	$nome= $_GET['nome'];
@@ -26,7 +26,7 @@
 	mysqli_close($con);
 
 	/* o header e responsavel por direcionar autoamticamente qume esta usando a página que no caso e da consulta dos dados*/
-	header("Location:consulta.php");
+	header("Location:../View/consulta.php");
 ?>
 
 

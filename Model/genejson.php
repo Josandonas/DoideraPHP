@@ -6,7 +6,7 @@
 /*Banco de Dados Supondo que já existe a base de dados e as tabelas criadas no exemplo irei utilizar um banco que contem a tabela tb_usuarios e que possui os campos id_usuario,nome e email. SQL que será executado Instrução SQL */
 	$sql = "SELECT id_nome, nome, genero, sobre FROM animal";
 
-	$SQL = mysqli_query($sql,$con)or die(mysql_error());
+	$SQL = mysqli_query($sql,$con)or die(mysqli_error($con));
 /*A variável $table agora contém e referência um objeto MySQL. Iniciando a iteração ao objeto para resgatar os registros temos: */
 	while ($row = mysqli_fetch_array($SQL));{
    // utilizado para definir o array quando houver mais de 1 registro retornado.
@@ -15,7 +15,7 @@
      		if (is_string($key)){
        // Irá criar um array com o nome do campo 
        // como chave (Key) e o valor (Value).
-       			$fields[mysql_field_name($SQL,$i++)] = $value;
+       			$fields[mysqli_fetch_field_direct($SQL,$i++)] = $value;
      		}
    		}
    // $json_result é o array que receberá 

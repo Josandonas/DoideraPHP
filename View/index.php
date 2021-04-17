@@ -5,14 +5,14 @@
 	<meta charset="UTF-8">
 	<script>document.createElement("Projeto_de_cadastro")</script>
 	<title>Sistema de Cadastro</title>
-	<link href="model.css" rel="stylesheet">
+	<link href="../View/CSS/model.css" rel="stylesheet">
 	</head>
 	
 	<body>
 		<div class="container">
 			<nav>
 				<ul class="menu">
-					<a href="consulta.php"> <li>Consulta </li> </a>
+					<a href="../View/consulta.php"> <li>Consulta </li> </a>
 				</ul>
 			</nav>
 			<section>

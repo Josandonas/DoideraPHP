@@ -1,6 +1,6 @@
 <?php
 /* incluo o arquivo sql com as funções de conectar e a execução */
-	include_once "./Model/sql.php";
+	include_once "../Model/sql.php";
 
 /* $con recebe a função de conectar no banco de dados */
 	$con=conectar();
@@ -42,15 +42,15 @@
 			<td><?php echo $mostrar["sobre"]; ?></td>
 			
 			<!-- cria dois botões responsaveis por retornar o id correspondente a um determinado animal no caso que são bem uteis para as funções de exclusão e edição-->
-			<td> <a href="editar.php?codigo=<?php echo $mostrar["id_name"]; ?>"> Editar </a> | 
-			<a href="excluir.php?codigo=<?php echo $mostrar["id_name"]; ?>"> Excluir </a> 
+			<td> <button><a href="./editar.php ?codigo=<?php echo $mostrar["id_name"]; ?>"> Editar </a></button> | 
+			<button><a href="../Controller/excluir.php ?codigo=<?php echo $mostrar["id_name"]; ?>"> Excluir </a></button> 
 			</td>
 		
 		</tr>
 
 		<?php  } ?>	
 		<!-- foi necessario criar um botão que me permitisse voltar a pagina de cadastro-->
-		<a href="index.php"><li>Voltar a página de Cadastro</li></a>
+		<a href="../View/index.php"><li>Voltar a página de Cadastro</li></a>
 	</table>
 
 </section>

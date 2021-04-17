@@ -1,6 +1,6 @@
 <?php 
 	/* incluo o arquivo sql com as funções de conectar e a execução */
-	include_once "./Model/sql.php";
+	include_once "../Model/sql.php";
 	/* O $id coleta o código que é passado via endereço do arquivo consulta.php */
 	$id=$_GET["codigo"];
 
