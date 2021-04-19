@@ -1,0 +1,67 @@
+/* código do arquivo index */
+/* aqui defino a imagem de fundo */
+#fundo{
+  background: url("../../Images/gatoConfortavel.jpg") no-repeat center center fixed;
+   /* Full height */
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+/* aqui defino as proporções do card */
+.card{
+  margin: 0 auto; /* neste ponto centralizo o card  */
+  margin-top: 50px; /*aqui elevo ao topo no lugar exato onde desejo que esteja*/
+  width: 800px;
+  height: 380px;
+  border-radius: 10px;
+}
+/* aqui determinamos o tamanho do container que ira 
+gerenciar o tamanho de todos os elementos internos
+é importante manter perspective em 100px porque
+mantem a ordem que a transição não escape do próprio eixo */
+.flip-container {
+  text-align: center;
+  width: 100%;
+  height: 339%;
+  perspective: 1000px;
+}
+/* deixa a posicao relativa de acordo com o tamanho do .flip-container
+mas netes ponto se é colocado um tempo na transição de giro
+garantindo um efeito 3d */
+.flipper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* garante a transição do giro completo na imagem back
+completando 360 graus */
+.back{
+  transform: rotateY(180deg);
+}
+/* deixa a posição das imagens em absoluto
+enquadrando junto do tamanho do flipper e escpdemdo a visibilidade
+da imagem que estiver atrás e na frente */
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+/* é necessáio manter o 100% das imagens porque
+ podem ter proporções diferentes sendo assim elas ficam responsivas*/
+#imagem1, #imagem2{
+  width: 100%;
+  height: 100%;
+}
+/* faz a rotação */
+.flip-container:hover .flipper{
+  transform: rotateY(180deg);
+  /* se quiser uma animação na vertical,
+  troque por rotateX(180deg)
+  */
+}
+/* código do arquivo index acaba aqui */
+
