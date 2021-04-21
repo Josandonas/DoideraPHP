@@ -1,6 +1,6 @@
-/* código do arquivo index */
+/* código do arquivo index.php */
 /* aqui defino a imagem de fundo */
-#fundo{
+#index{
   background: url("../../Images/gatoConfortavel.jpg") no-repeat center center fixed;
    /* Full height */
    -webkit-background-size: cover;
@@ -65,3 +65,11 @@ da imagem que estiver atrás e na frente */
 }
 /* código do arquivo index acaba aqui */
 
+/* código do arquivo PaginaDados.php */
+.Dados{
+  background: url("../../Images/leoes.jpg") no-repeat center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

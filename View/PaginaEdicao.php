@@ -65,13 +65,10 @@ $linha=mysqli_fetch_object($resultado);
 					<div>
 					Sobre:<br> <input  name="sobre" value="<?php echo $linha->sobre; ?>" type="text" class="campodescribe" maxlength="6000" required autofocus>
 					</div>
-					
 					<input type="submit" value="Salvar Alterações" class="btn">
-	
 				</form>
 			</section>
 		</div>
-		
 	</body>
 </html>
 <!-- onde a aplcação do mysql se encerra -->
