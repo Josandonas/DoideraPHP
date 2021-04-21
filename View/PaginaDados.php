@@ -26,7 +26,7 @@
 		<div class="container-fluid" style="width: 90%;">		
 			<br>
 			<table class="table table-secondary table-bordered caption-top" >
-				<caption><h1 class="text-white" align="center">Consulta de Animais</h1></caption>
+				<caption><h1 class="text-white" align="center"><i class="icofont-pelican"></i> Consulta de Animais <i class="icofont-pelican"></i></h1></caption>
 				<thead class="table-dark">
 					<tr>
 						<td>Nome</td>
