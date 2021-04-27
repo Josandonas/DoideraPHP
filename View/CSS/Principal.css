@@ -73,3 +73,18 @@ da imagem que estiver atrás e na frente */
   -o-background-size: cover;
   background-size: cover;
 }
+/* código do arquivo PaginaDados.php acaba aqui */
+
+/* código do arquivo PadinaEdicao.php */
+.Edicao{
+  background: url("../../Images/lionhead.jpg") no-repeat center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#textoCor{
+  color:  white;
+}
+/* código do arquivo PadinaEdicao.php acaba aqui */

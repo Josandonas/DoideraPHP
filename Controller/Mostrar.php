@@ -2,19 +2,20 @@
 // Aqui onde incluo o arquivo responsável pela execução da query 
 include_once "../Model/sql.php";
 
-// realizo a criação da função  que retornará os dados do BD
+//apresento todos os dados na tabela dos animais cadastrados
 function Dados(){
-
-    /* $dado recebe a query que será executado no banco de dados */
-    $query="SELECT *From animal";
-
-    // A conexão com o banco é realizada neste ponto
     $con=conectar();
-
-    // aqui onde a varivel $informacoes recebe a função que realiza a execução da query e a conexão dentro do BD
+    $query="SELECT *From animal";
     $informacoes=execsql($query,$con);
-
     return $informacoes;
+}
+
+//apresento as informações relacionadas ao animal da página de edição 
+function dadoEdicao($id , $con){
+    $query = "SELECT *FROM animal WHERE id_name= '$id' ";
+    $dados = execsql($query,$con);
+    return mysqli_fetch_object($dados);
+    header("Location:../View/PaginaEdicao.php");
 }
 
 ?>
