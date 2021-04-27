@@ -25,33 +25,32 @@
 				</div>
 		</nav>
 		<div class="container-fluid">
-				<h1 style="text-align: center;">Editar Informações</h1>
-				<div class="container">
-					<form method="$POST" action="../Controller/Editar.php" >
-						<input name="code" value="<?php echo $linha->id_name; ?>" type="hidden">
-						<div class="mb-3">
-							<label for="exampleFormControlInput1" class="form-label">Nome do Animal:</label>
-							<input type="text" class="form-control" name="nome" value="<?php echo $linha->nome; ?>">
+			<br>
+			<h1 style="text-align: center;"><i class="icofont-giraffe"></i> Editar Informações <i class="icofont-giraffe"></i></h1>
+			<div class="container">
+				<form method="$POST" action="../Controller/Editar.php" >
+					<input name="code" value="<?php echo $linha->id_name; ?>" type="hidden">
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Nome do Animal:</label>
+						<input type="text" class="form-control" name="nome" value="<?php echo $linha->nome; ?>">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Gênero:</label>
+						<input type="text" class="form-control" name="genero" value="<?php echo $linha->genero;?>">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Sobre:</label>
+						<textarea class="form-control" name="sobre" type="text" rows="3" ><?php echo $linha->sobre; ?></textarea>
+					</div>
+					<br>
+					<div class="text-center">
+						<div class="d-grid gap-4 col-5 mx-auto">
+							<button class="btn btn-primary" type="submit"><i class="icofont-save"></i> Salvar</button>
+							<!-- <input class="btn btn-danger" type="reset" name="Limpar"> -->
 						</div>
-						<div class="mb-3">
-							<label for="exampleFormControlInput1" class="form-label">Gênero:</label>
-							<input type="text" class="form-control" name="genero" value="<?php echo $linha->genero;?>">
-						</div>
-						<div class="mb-3">
-							<label for="exampleFormControlTextarea1" class="form-label">Sobre:</label>
-							<textarea class="form-control" name="sobre" type="text" rows="3" ><?php echo $linha->sobre; ?></textarea>
-						</div>
-						<br>
-						<div class="text-center">
-							<div class="d-grid gap-4 col-5 mx-auto">
-								<button class="btn btn-primary" type="submit"><i class="icofont-save"></i> Salvar</button>
-								<!-- <input class="btn btn-danger" type="reset" name="Limpar"> -->
-							</div>
-						</div>
-						
-
-						</form>
-				</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
