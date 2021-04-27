@@ -24,8 +24,8 @@
 										<a href="../View/PaginaDados.php" class="btn btn-primary" type="button" aria-current="page" >Relatório <i class="icofont-presentation-alt"></i></a>
 									</div>
 									<br>
-									<div class="flip-container" >
-										<div class="flipper" >
+									<div class="girar-container" >
+										<div class="girar" >
 											<div class="front">
 												<img id="imagem1" src="../Images/tigre.jpg" />
 											</div>

@@ -20,16 +20,16 @@
 gerenciar o tamanho de todos os elementos internos
 é importante manter perspective em 100px porque
 mantem a ordem que a transição não escape do próprio eixo */
-.flip-container {
+.girar-container {
   text-align: center;
   width: 100%;
   height: 339%;
   perspective: 1000px;
 }
 /* deixa a posicao relativa de acordo com o tamanho do .flip-container
-mas netes ponto se é colocado um tempo na transição de giro
+mas neste ponto se é colocado um tempo na transição de giro
 garantindo um efeito 3d */
-.flipper{
+.girar{
   position: relative;
   width: 100%;
   height: 100%;
@@ -57,7 +57,7 @@ da imagem que estiver atrás e na frente */
   height: 100%;
 }
 /* faz a rotação */
-.flip-container:hover .flipper{
+.girar-container:hover .girar{
   transform: rotateY(180deg);
   /* se quiser uma animação na vertical,
   troque por rotateX(180deg)
