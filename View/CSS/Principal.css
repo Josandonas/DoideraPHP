@@ -11,9 +11,9 @@
 /* aqui defino as proporções do card */
 .card{
   margin: 0 auto; /* neste ponto centralizo o card  */
-  margin-top: 50px; /*aqui elevo ao topo no lugar exato onde desejo que esteja*/
+  margin-top: 20px; /*aqui elevo ao topo no lugar exato onde desejo que esteja*/
   width: 800px;
-  height: 380px;
+  height: 400px;
   border-radius: 10px;
 }
 /* aqui determinamos o tamanho do container que ira 

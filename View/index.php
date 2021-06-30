@@ -42,9 +42,14 @@
 						<div class="container-fluid">
 							<form method="$POST" action="../Controller/Salvar.php">
 								<div>Nome do Animal:<br> <input type="text" name="nome" class="form-control" maxlength="40" required autofocus></div>
-
-								<div>Gênero:<br> <input type="text" name="genero" class="form-control" maxlength="5000" required autofocus></div>
-								
+								<br>
+								<div class="input-group mb-3">
+									<span class="input-group-text" id="basic-addon1">Sexo</span>
+									<select class="form-select" name="genero">
+										<option value="Macho" selected >Macho</option>
+										<option value="Fêmea">Fêmea</option>
+									</select>
+								</div>								
 								<div>Sobre:<br> <textarea type="text-area" name="sobre" class="form-control" maxlength="6000" required autofocus></textarea>
 								<br>
 								<div class="btn-toolbar mb-3" role="toolbar"> 

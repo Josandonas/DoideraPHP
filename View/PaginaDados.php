@@ -3,6 +3,7 @@
 	include_once "../Controller/Mostrar.php";
 // faço a variavel $resultado coletar os dados da chamada do banco	
 	$resultado=Dados();
+	$itens_por_pagina = 5;
 ?>
 
 <!DOCTYPE html>

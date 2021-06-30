@@ -34,9 +34,18 @@
 						<label for="exampleFormControlInput1" class="form-label">Nome do Animal:</label>
 						<input type="text" class="form-control" name="nome" value="<?php echo $linha->nome; ?>">
 					</div>
-					<div class="mb-3">
-						<label for="exampleFormControlInput1" class="form-label">Gênero:</label>
-						<input type="text" class="form-control" name="genero" value="<?php echo $linha->genero;?>">
+					<div class="input-group mb-3">
+						<span class="input-group-text" id="basic-addon1">Sexo</span>
+						<select class="form-select" name="genero">
+						<?php if($linha->genero == 'Macho'){ ?>
+							<option value="Macho" selected >Macho</option>
+							<option value="Fêmea">Fêmea</option>
+						<?php }?>
+						<?php if($linha->genero == 'Fêmea'){ ?>
+							<option value="Fêmea" selected>Fêmea</option>
+							<option value="Macho">Macho</option>
+						<?php }?>
+						</select>
 					</div>
 					<div class="mb-3">
 						<label for="exampleFormControlTextarea1" class="form-label">Sobre:</label>
@@ -56,4 +65,3 @@
 </html>
 
 <?php   mysqli_close($con);?>
-<!-- onde a aplcação do mysql se encerra -->
