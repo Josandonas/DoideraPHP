@@ -45,14 +45,15 @@
 					<!-- mostra o qu está contido no array do banco de dados contruindo uma tabela com os dados internos como a tag <td> </td> e <tr> </tr>-->
 						<td><?php echo $mostrar["nome"]; ?></td>
 						<td><?php echo $mostrar["genero"]; ?></td>
-						<td align="center"><button type="button"
+						<td class="text-center"><button type="button"
 									class="btn btn-primary"
 									data-toggle="modal"
-									data-target="#ha<?php echo $mostrar["id_name"]; ?>">Ler <i class="icofont-eye"></i></button></td>
+									data-target="#edita<?php echo $mostrar["id_name"]; ?>">Ler <i class="icofont-eye"></i></button>
+						</td>
 
-							<div class="modal fade" id="ha<?php echo $mostrar["id_name"]; ?>" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-									<div class="modal-content">
+						<div class="modal fade" id="edita<?php echo $mostrar["id_name"]; ?>" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+								<div class="modal-content">
 									<div class="modal-header" >
 										<h5 class="modal-title" id="staticBackdropLabel"><?php echo $mostrar["nome"]; ?></h5>
 									</div>
@@ -62,12 +63,33 @@
 									<div class="modal-footer">
 										<button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
 									</div>
+								</div>
+							</div>
+						</div>
+
+						<td class="text-center"> 
+							<a href="./PaginaEdicao.php ?codigo=<?php echo $mostrar["id_name"]; ?>" type="button" class="btn btn-warning"> <i class="icofont-ui-edit"></i> Editar </a> 
+							<button type="button"
+									class="btn btn-danger"
+									data-toggle="modal"
+									data-target="#apaga<?php echo $mostrar["id_name"]; ?>"><i class="icofont-ui-delete"></i> Excluir 
+							</button>
+							<div class="modal fade" id="apaga<?php echo $mostrar["id_name"]; ?>" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header"> 
+											<h5 class="modal-title">Aviso <i class="icofont-exclamation-tringle"></i></h5>
+											<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="icofont-ui-close"></i></button>
+										</div>
+										<div class="modal-body">
+											<p class="fw-normal">Tem certeza que deseja exluir o animal <b><?php echo $mostrar["nome"]; ?></b> do registro</p>
+										</div>
+										<div class="modal-footer">
+											<a href="../Controller/Excluir.php ?codigo=<?php echo $mostrar["id_name"]; ?>" type="button" class="btn btn-danger"><i class="icofont-ui-delete"></i> Sim, tenho certeza </a>
+										</div>
 									</div>
 								</div>
 							</div>
-
-						<td class="text-center"> <a href="./PaginaEdicao.php ?codigo=<?php echo $mostrar["id_name"]; ?>" type="button" class="btn btn-warning"> <i class="icofont-ui-edit"></i> Editar </a> 
-						<a href="../Controller/Excluir.php ?codigo=<?php echo $mostrar["id_name"]; ?>" type="button" class="btn btn-danger"><i class="icofont-ui-delete"></i> Excluir </a> 
 						</td>
 					
 					</tr>
